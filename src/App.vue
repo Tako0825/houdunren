@@ -1,19 +1,21 @@
 <template>
   <div id="app">
-    <h1>xixi</h1>
+    <screen-size></screen-size>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
+import ScreenSize from "@/components/ScreenSize.vue"
+
 export default {
   name: 'App',
   components: {
-
+    ScreenSize
   }
 }
 </script>
 
 <style>
-
+  @import "./main.css";
 </style>

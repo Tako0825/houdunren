@@ -1,17 +1,16 @@
+import admin from "@/routes/admin.js"
+import login from "@/routes/login.js"
+import register from "@/routes/register.js"
+import error from "@/routes/error.js"
 export default () => {
-    return [{
-        path: "/admin",
-        alias: "/",
-        name: "admin",
-        component: () => import("@/layouts/admin/IndexPage.vue"),
-        children: [{
-            path: "a",
-            name: "AdminA",
-            component: () => import("@/views/admin/AdminA.vue")
-        },{
-            path: "b",
-            name: "AdminB",
-            component: () => import("@/views/admin/AdminB.vue")
-        }]
-    }]
+    return [
+        {
+            path: "/",
+            component: () => import("@/layouts/IndexPage.vue"),
+        },
+        admin,
+        login,
+        register,
+        ...error
+    ]
 }

@@ -1,7 +1,5 @@
 <template>
-  <div>
-    admin-a - 视图组件
-  </div>
+    <div>Markdown编辑器</div>
 </template>
 
 <script>
