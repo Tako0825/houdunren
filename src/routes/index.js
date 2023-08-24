@@ -6,6 +6,7 @@ export default () => {
     return [
         {
             path: "/",
+            name: "home",
             component: () => import("@/layouts/IndexPage.vue"),
         },
         admin,

@@ -6,9 +6,11 @@
     </div>
     <div class="w-full flex flex-col">
       <!-- 菜单栏 -->
-      <div class="h-14 bg-gray-100 border-b-2 shadow-sm">
+      <div class="h-14 bg-white border-b-2 shadow-sm">
         <MenuBar/>
       </div>
+      <!-- 任务栏 -->
+        <TaskBar/>
       <!-- 主视图 -->
       <div class="bg-gray-50">
         <router-view></router-view>
@@ -18,11 +20,12 @@
 </template>
 
 <script>
-import MenuBar from "@/layouts/Admin/MenuBar.vue"
 import NavigationBar from "@/layouts/Admin/NavigationBar.vue"
+import MenuBar from "@/layouts/Admin/MenuBar.vue"
+import TaskBar from "@/layouts/Admin/TaskBar.vue";
 export default {
   components: {
-    MenuBar, NavigationBar
+    MenuBar, NavigationBar, TaskBar
   }
 }
 </script>
