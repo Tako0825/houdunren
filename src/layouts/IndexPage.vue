@@ -1,6 +1,7 @@
 <template>
   <div>
-    <div class="w-screen h-screen flex justify-center items-center bg-gray-700">
+    <div class="w-screen h-screen flex justify-center items-center bg-gray-700 box-border">
+      <!-- 主界面 -->
       <div class="container w-full flex flex-col justify-center items-center transform -translate-y-20 select-none px-4">
         <!-- logo -->
         <img src="@/assets/logo.png" alt="" class=" box-content w-36 h-36 p-12 transform translate-y-20">
@@ -19,7 +20,8 @@
         </div>
       </div>
     </div>
-    <div>
+    <!-- 底部 -->
+    <div class="w-screen">
       <FooterComponent/>
     </div>
   </div>

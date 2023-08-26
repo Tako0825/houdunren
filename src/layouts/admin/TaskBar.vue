@@ -1,19 +1,21 @@
 <template>
-  <div class="w-full h-14 bg-gray-50 border-b-2 shadow-sm pl-2 flex flex-row justify-start items-center text-xs" v-if="taskList.length">
+  <div class="w-full h-14 flex flex-row justify-start items-center text-xs overflow-auto" v-if="taskList.length">
     <router-link 
       v-for="(item) in taskList" 
       :to="item.path"
       :key="item.name"
-      class="border-2 px-4 py-2 mx-1 rounded-md hover:bg-green-600 hover:text-white border-green-600 transition duration-200 cursor-pointer"
-      :class="{'active' : item.name === current.name}"
+      class="border-2 border-green-500 px-4 py-2 mx-1 rounded-md hover:bg-green-600 hover:text-white hover:border-green-600 transition duration-200 cursor-pointer whitespace-nowrap"
+      :class="{'actived' : item.name === $route.name}"
     >
       {{ item.meta.title }}
     </router-link>
-    <span 
+    <button 
       v-if="taskList.length" 
-      class="px-4 py-2 text-gray-400 hover:text-green-600 cursor-pointer transition duration-200"
+      class="px-4 py-2 text-gray-400 hover:text-green-600 font-bold cursor-pointer transition duration-200 whitespace-nowrap"
       @click="taskList=[]"
-    >一键清除</span>
+    >
+      清空任务
+    </button>
   </div>
 </template>
 
@@ -28,7 +30,6 @@ export default {
       }).length) {
         this.taskList.push(to)
       }
-      this.current = to
     })
   },
   data() {
@@ -41,7 +42,7 @@ export default {
 </script>
 
 <style>
-  .active {
+  .actived {
     background-color: #34495e!important;
     border-color: #34495e!important;
     color: #fff;

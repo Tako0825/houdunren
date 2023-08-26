@@ -1,5 +1,5 @@
 <template>
-    <div class="w-screen h-52 bg-gray-800 flex flex-col justify-center items-center text-white text-sm">
+    <div class="w-full h-52 bg-gray-800 flex flex-col justify-center items-center text-white text-sm">
         <p class="py-1">{{ slogan }}</p>
         <p class="py-1">微信: {{ wechat }} 邮箱: {{ email }}</p>
         <p class="py-1">{{ copyright }}</p>

@@ -9,9 +9,9 @@ export default () => {
             name: "home",
             component: () => import("@/layouts/IndexPage.vue"),
         },
-        admin,
+        ...admin,
         login,
         register,
-        ...error
+        error
     ]
 }
