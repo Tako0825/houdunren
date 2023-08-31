@@ -22,9 +22,9 @@
 </template>
   
 <script>
-    import NavigationBar from "@/layouts/Admin/NavigationBar.vue"
-    import MenuBar from "@/layouts/Admin/MenuBar.vue"
-    import TaskBar from "@/layouts/Admin/TaskBar.vue";
+    import NavigationBar from "@/layouts/admin/NavigationBar.vue"
+    import MenuBar from "@/layouts/admin/MenuBar.vue"
+    import TaskBar from "@/layouts/admin/TaskBar.vue";
     export default {
         components: {
             NavigationBar, MenuBar, TaskBar

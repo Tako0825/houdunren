@@ -1,5 +1,5 @@
 export default {
     path: "/register",
     name: "register",
-    component: () => import("@/layouts/Register/IndexPage.vue")
+    component: () => import("@/layouts/register/IndexPage.vue")
 }
