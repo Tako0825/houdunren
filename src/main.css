@@ -14,7 +14,6 @@ html {
     overflow-y: hidden;
 }
 
-
 /* 适用于 Webkit 浏览器（Chrome、Safari等） */
 ::-webkit-scrollbar {
     width: .4rem;

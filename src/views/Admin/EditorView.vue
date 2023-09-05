@@ -1,10 +1,13 @@
 <template>
-    <div>富文本编辑器</div>
+    <WangEditor/>
 </template>
 
 <script>
+import WangEditor from '@/components/WangEditor.vue';
 export default {
-
+    components: {
+        WangEditor
+    }
 }
 </script>
 

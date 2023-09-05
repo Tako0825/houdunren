@@ -15,7 +15,9 @@
             </div>
             <!-- 主视图 -->
             <div class=" flex-1 bg-gray-100 p-6 overflow-auto">
-                <router-view></router-view>
+                <keep-alive>
+                    <router-view></router-view>
+                </keep-alive>
             </div>
         </div>
     </div>

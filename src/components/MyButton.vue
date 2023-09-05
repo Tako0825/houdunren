@@ -1,7 +1,5 @@
 <template>
-  <div>
-    组合API
-  </div>
+  <button type="button">按钮</button>
 </template>
 
 <script>

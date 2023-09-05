@@ -14,14 +14,8 @@ export default [
         {
             path: "animate",
             name: "animate",
-            meta: { title: "动态列表" },
+            meta: { title: "过渡 & 动画" },
             component: () => import("@/views/Admin/AnimateView.vue")
-        },
-        {
-            path: "util",
-            name: "util",
-            meta: { title: "组合API" },
-            component: () => import("@/views/Admin/UtilView.vue")
         }
     ]
   },
@@ -33,13 +27,13 @@ export default [
         {
             path: "editor",
             name: "editor",
-            meta: { title: "富文本编辑器" },
+            meta: { title: "wangEditor" },
             component: () => import("@/views/Admin/EditorView.vue")
         },
         {
             path: "markdown",
             name: "markdown",
-            meta: { title: "Markdown" },
+            meta: { title: "Toast UI Editor" },
             component: () => import("@/views/Admin/MarkdownView.vue")
         }
     ]

@@ -1,10 +1,13 @@
 <template>
-    <div>Markdown编辑器</div>
+    <ToastEditor/>
 </template>
 
 <script>
+import ToastEditor from '@/components/ToastEditor.vue'
 export default {
-
+    components: {
+        ToastEditor
+    }
 }
 </script>
 
